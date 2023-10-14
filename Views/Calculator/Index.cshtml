@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<center>
+    <div class="calculatorBorder">
+        <input type="text" id="display" name="calculatorDisplay">
+        <button id="reset" class="calculatorButton" onclick="myInstance.reset()">C</button>
+        <input type="button" value="tan" id="tan" class="calculatorButton" onclick="myInstance.tanClicked()"/>
+        <input type="button" value="sin" id="sin"  class="calculatorButton" onclick="myInstance.sinClicked()"/>
+        <input type="button" value="cos" id="cos" class="calculatorButton" onclick="myInstance.cosClicked()"/>
+        <button id="clear" class="calculatorButton" onclick="myInstance.clear();">CE</button>
+        <button id="one" class="calculatorButton" onclick="myInstance.findValue('one'); myInstance.measure('1')">1</button>
+        <button id="two" class="calculatorButton" onclick="myInstance.findValue('two'); myInstance.measure('2')">2</button>
+        <button id="three" class="calculatorButton" onclick="myInstance.findValue('three'); myInstance.measure('3')">3</button>
+        <buton id="divide" class="calculatorButton" onclick="myInstance.measure('/')">/</buton>
+        <button id="four" class="calculatorButton" onclick="myInstance.findValue('four'); myInstance.measure('4')">4</button>
+        <button id="five" class="calculatorButton" onclick="myInstance.findValue('five'); myInstance.measure('5')">5</button>
+        <button id="six" class="calculatorButton" onclick="myInstance.findValue('six'); myInstance.measure('6')">6</button>
+        <buton id="multiply" class="calculatorButton" onclick="myInstance.measure('*')">*</buton>
+        <button id="seven" class="calculatorButton" onclick="myInstance.findValue('seven'); myInstance.measure('7')">7</button>
+        <button id="eight" class="calculatorButton" onclick="myInstance.findValue('eight'); myInstance.measure('8')">8</button>
+        <button id="nine" class="calculatorButton" onclick="myInstance.findValue('nine'); myInstance.measure('9')">9</button>
+        <button id="root" class="calculatorButton" onclick="myInstance.secondRoot()">√x</button>
+        <button id="plus" class="calculatorButton" onclick="myInstance.measure('+')">+</button>
+        <button id="zero" class="calculatorButton" onclick="myInstance.findValue('zero'); myInstance.measure('0')">0</button>
+        <button id="minus" class="calculatorButton" onclick="myInstance.measure('-')">-</button>
+        <button id="equals" class="calculatorButton" onclick="myInstance.answer()">=</button>
+    </div>
+</center>

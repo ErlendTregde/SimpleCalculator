@@ -1,0 +1,64 @@
+﻿.calculatorBorder {
+    padding: 20px;
+    width: 400px;
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculatorButton {
+    cursor: pointer;
+    border: none;
+    background-color: #B0B0B0;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.calculatorButton:hover {
+    background-color: #A0A0A0;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.calculatorButton:active {
+    background-color: #909080;
+    opacity: 2;
+}
+
+
+#display {
+    grid-column: 1 / span 4;
+    font-size: 25px;
+    text-align: right;
+    padding: 15px;
+    background-color: #C2C2C2;
+    color: #333;
+    border-radius: 5px;
+}
+
+
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    background-color: #9B9B9B;
+}
+
+#plus, #minus, #multiply, #divide, #root, #reset, #clear, #sin, #cos, #tan {
+    background-color: lightgray;
+}
+
+#equals {
+    background-color: lightskyblue;
+    grid-column: 1 / span 4;
+}
+
+
+
+
+
