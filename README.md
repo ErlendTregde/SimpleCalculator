@@ -21,7 +21,7 @@ This project follows the **MVC pattern**:
 ## How to Run the Project
 1. Clone this repository to your local machine:
     ```bash
-    git clone <repository-url>
+    [git clone https://github.com/ErlendTregde/SimpleCalculator.git]
     ```
 2. Open the project in Visual Studio or your preferred .NET development environment.
 3. Build and run the project.
